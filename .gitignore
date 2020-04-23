@@ -1,0 +1,8 @@
+*
+!.gitignore
+!imgs
+!imgs/**
+!assets
+!assets/**
+!index.html
+!.htaccess
