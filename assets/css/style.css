@@ -1,12 +1,12 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background: #eaeaf9;
+  background: #f4f4f7;
   padding-bottom: 25px;
 }
 
 h1 {
-  color: #000000;
-  font-size: 6.0rem;
+  color: #fc766a;
+  font-size: 13.0rem;
   font-weight: 200;
   font-variant: small-caps;
   letter-spacing: -0.45rem;
@@ -21,15 +21,32 @@ h4 {
 }
 
 #last-name {
-  font-weight: 600;
-  color: #333359;
+  font-weight: 700;
+  /* font-size: 7.5rem; */
+  /* color: #7d81a7cc; */
+  color: #2b4766;
   letter-spacing: -0.4rem;
-  text-shadow: 2px 3px 5px #000000a0;
+  text-shadow: 4px 5px 10px #000000cf;
 }
 
 .jumbotron {
   background: #33333322;
-  text-align: center;
+  background: url("../../header3.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+  /* -webkit-filter: blur(2px) grayscale(40%);
+  filter: blur(2px) grayscale(40%); */
+
+}
+
+.navbar-fixed-top {height: 40px;}
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
 }
 
 .app-title {
@@ -102,7 +119,7 @@ h4 {
   cursor: pointer;
 }
 
-@media (max-width: 776px) {
+@media (max-width: 996px) {
   h1 {
     font-size: 4rem;
   }
@@ -120,4 +137,6 @@ h4 {
   }
   #last-name {
     text-shadow: 1px 2px 5px #000000a0;
+    font-size: 4.5rem;
+  }
 }

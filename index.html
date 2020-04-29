@@ -27,21 +27,63 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron mt-4 px-2 py-2">
-      <h1 class="">Eric <span id="last-name">McDaniel</span></h1>
-      <img id="main-logo" src="imgs/logos/bashlogo.png" alt="Official ericmcd.com Logo">
-      
-    </div>    
+  <div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center" style="height: 80vh">
+        <h1 class="d-inline">Eric <span id="last-name">McDaniel</span></h1>
+
+      </div>
+    </div>
+  
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="imgs/logos/bashlogo-mini.png" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+
     <div class="row">
       <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
         <p><span class="app-title">Math Decoder</span> is a Cryptography focused mathematics worksheet aimed at helping young children have fun while practicing mathematics. Parents are prompted to enter a secret message plus an optional additional message. Using the jQuery javascript library, this web application will transform this secret message string into a series of mathematical expressions that need to be solved. With each expression and accompanying letter corresponding to a blank solution provided below, it is up to the decoder to solve the expressions to decrypt the message. This web app was designed to be as printable as possible. Users can input any arbitrary sentence, and the program will do all the work generating the expressions. Simply send it to your printer and let your child decode the message.</p>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center">
-        <img class="img-fluid" src="mathdecoder/imgs/calculator.png" alt="Math Decoder logo">
+      <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
+        <img class="img-fluid d-none d-md-block" src="mathdecoder/imgs/calculator.png" alt="Math Decoder logo">
       </div>
     </div>
     <div class="row">
