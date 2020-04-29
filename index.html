@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eric McDaniel</title>
+  <title>Eric McDaniel - ericmcd.com</title>
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="imgs/icons/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="imgs/icons/apple-touch-icon-114x114.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="imgs/icons/apple-touch-icon-72x72.png" />
@@ -28,20 +28,17 @@
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="jumbotron jumbotron-fluid mb-0">
-    <div class="container">
       <div class="d-flex justify-content-center align-items-center" style="height: 80vh">
-        <h1 class="d-inline">Eric <span id="last-name">McDaniel</span></h1>
-
-      </div>
+        <h1 data-aos="fade-up" class="d-inline">Eric <span id="last-name">McDaniel</span></h1>
     </div>
-  
   </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-0">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark mt-0">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="imgs/logos/bashlogo-mini.png" class="img-fluid"></a>
+      <a class="navbar-brand mr-4" href="#"><img src="imgs/logos/bashlogo-mini.png" class="img-fluid mr-1"> <span class="text-white-50">/home/</span>ericmcd.com</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,43 +46,43 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link mr-1" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link mr-1" href="#">Portfolio</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
+            <a class="nav-link mr-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Web Apps
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="https://www.ericmcd.com/mathdecoder/">Math Decoder</a>
+              <a class="dropdown-item" href="https://chore.ericmcd.com/">Chore Chart</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">View All</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link mr-1 disabled" href="#" tabindex="-1" aria-disabled="true">Résumé</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <a class="nav-link d-inline mr-1 p-0" href="https://github.com/McDanielES/"><img src="imgs/network-icons/github.png" class="img-fluid"></a>
+        <a class="nav-link d-inline mr-1 p-0" href="https://www.linkedin.com/in/eric-mcdaniel-71a1a2153/"><img src="imgs/network-icons/linkedin.png" class="img-fluid"></a>
+        <a class="nav-link d-inline mr-1 p-0" href="https://twitter.com/devnullsrevenge"><img src="imgs/network-icons/twitter.png" class="img-fluid"></a>
+        <a class="nav-link d-inline mr-1 p-0" href="https://www.facebook.com/eric.s.mcdaniel/"><img src="imgs/network-icons/facebook.png" class="img-fluid"></a>
       </div>
     </div>
   </nav>
-  <div class="container mt-5">
-
-    <div class="row">
-      <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
-        <p><span class="app-title">Math Decoder</span> is a Cryptography focused mathematics worksheet aimed at helping young children have fun while practicing mathematics. Parents are prompted to enter a secret message plus an optional additional message. Using the jQuery javascript library, this web application will transform this secret message string into a series of mathematical expressions that need to be solved. With each expression and accompanying letter corresponding to a blank solution provided below, it is up to the decoder to solve the expressions to decrypt the message. This web app was designed to be as printable as possible. Users can input any arbitrary sentence, and the program will do all the work generating the expressions. Simply send it to your printer and let your child decode the message.</p>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
-        <img class="img-fluid d-none d-md-block" src="mathdecoder/imgs/calculator.png" alt="Math Decoder logo">
-      </div>
-    </div>
+  <div class="container wrapper mt-5">
+    <div data-aos="fade-left">
+      <div class="row" data-aos="fade-left">
+        <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
+          <p><span class="app-title">Math Decoder</span> is a Cryptography focused mathematics worksheet aimed at helping young children have fun while practicing mathematics. Parents are prompted to enter a secret message plus an optional additional message. Using the jQuery javascript library, this web application will transform this secret message string into a series of mathematical expressions that need to be solved. With each expression and accompanying letter corresponding to a blank solution provided below, it is up to the decoder to solve the expressions to decrypt the message. This web app was designed to be as printable as possible. Users can input any arbitrary sentence, and the program will do all the work generating the expressions. Simply send it to your printer and let your child decode the message.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
+          <img class="img-fluid d-none d-md-block" src="mathdecoder/imgs/calculator.png" alt="Math Decoder logo">
+        </div>
+      </div>      
     <div class="row">
       <div class="col-md-6 text-justify d-flex justify-content-center align-items-center my-3">
         <a href="mathdecoder" type="button" class="btn btn-secondary btn-lg">Take me to Math Decoder</a>
@@ -111,11 +108,13 @@
         </div>      
       </div>
     </div>
+  </div>
 
+  <div data-aos="fade-right">
     <div class="row-tile-color px-3 my-4 py-3">
       <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center">
-          <img class="img-fluid" src="https://chore.ericmcd.com/choreimgs/favicon.png" alt="Chore Chart logo">
+        <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
+          <img class="img-fluid d-none d-md-block" src="https://chore.ericmcd.com/choreimgs/favicon.png" alt="Chore Chart logo">
         </div>
         <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center px-4 pt-4">
           <p><span class="app-title">Chore Chart</span> is a proof of concept web application that is currently <strong>non-functional</strong> and currently in development. This is a chore tracking solution for parents and an interactive method for children to find new ways to enjoy working on their often boring chores. Similar to Math Decoder, it was based on <a href="../chore.ericmcd.com/choreimgs/conceptchorechart.jpg">this concept we previously made on Microsoft Word</a> for Lillian. We laminated a chore chart and she marked off her tasks. My goal was to make it more interactive, fun, and engaging for her. I wanted a measurable solution for parents to track the progress and keep records of her actions, and thus Chore Chart was born. <strong>Please understand:</strong> The website is front-end only and is strictly eye-candy. No actual logging is taking place and no back-end technology has been implement. That will come in due time. This is just a proof of concept.</p>
@@ -127,28 +126,47 @@
         </div>
       </div>
     </div>
-    <hr>
-    <h3>Other clicky stuffs</h3>
-    <ul>
-      <li><a href="thegreatguess">The Great Guess</a>, an RGB Color Guessing Game</li>
-      <li><a href="todolist">Todo List</a>, a stupid simple todo list</li>
-      <li><a href="patatapper">Patatapper Clone</a>, just like <a href="https://patatap.com/">Patatap</a> but more primitive.
-        <ul>
-          <li><strong>Desktop only!</strong> The keypress events cannot be registered from a mobile device.</li>
-        </ul>
-      </li>
-      <li><a href="https://github.com/McDanielES/">Eric's GitHub</a>, where I open-source a lot of code</li>
-      <ul>
-        <li>Another Note: Most code on this website current in development won't be available until I actually release the first beta version. Check back soon.</li>
-      </ul>
-    </ul>
   </div>
 
-  <hr>
+    <div data-aos="fade-up">
+      <div class="row">
+        <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
+          <h3><span class="app-title">Other clicky stuffs</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
+          <ul>
+            <li><a href="thegreatguess">The Great Guess</a>, an RGB Color Guessing Game</li>
+            <li><a href="todolist">Todo List</a>, a stupid simple todo list</li>
+            <li><a href="patatapper">Patatapper Clone</a>, just like <a href="https://patatap.com/">Patatap</a> but more primitive.
+              <ul>
+                <li><strong>Desktop only!</strong> The keypress events cannot be registered from a mobile device.</li>
+              </ul>
+            </li>
+            <li><a href="https://github.com/McDanielES/">Eric's GitHub</a>, where I open-source a lot of code</li>
+            <ul>
+              <li>Another Note: Most code on this website current in development won't be available until I actually release the first beta version. Check back soon.</li>
+            </ul>
+          </ul>  
+        </div>
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  
+
+  <footer class="py-4 text-white-50">
+    <div class="container text-center">
+      Copyright <i class="far fa-copyright"></i> 2020 Eric McDaniel. 
+      <span>Contact me at <a style="text-decoration: underline;" class="text-white-50" href="mailto:eric@ericmcd.com">eric@ericmcd.com</a></span>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
 </html>

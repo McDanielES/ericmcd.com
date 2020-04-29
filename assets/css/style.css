@@ -1,12 +1,14 @@
 body {
+  height: 100%;
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   background: #f4f4f7;
-  padding-bottom: 25px;
 }
 
 h1 {
   color: #fc766a;
-  font-size: 13.0rem;
+  /* font-size: 13.0rem; */
+  font-size: 12vw;
   font-weight: 200;
   font-variant: small-caps;
   letter-spacing: -0.45rem;
@@ -16,47 +18,50 @@ h4 {
   font-size: 2rem;
 }
 
-#main-logo {
-  width: 30%;
-}
-
 #last-name {
   font-weight: 700;
-  /* font-size: 7.5rem; */
-  /* color: #7d81a7cc; */
-  color: #2b4766;
+  color: #2c65a5;
   letter-spacing: -0.4rem;
   text-shadow: 4px 5px 10px #000000cf;
 }
 
+.display-3 {
+  font-weight: 200;
+}
+
 .jumbotron {
   background: #33333322;
-  background: url("../../header3.jpg") no-repeat center center fixed; 
+  background: linear-gradient(rgba(0, 0, 0, 0.05),
+                              rgba(0, 0, 0, 0.9)), 
+              url("../../header2.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-
-  /* -webkit-filter: blur(2px) grayscale(40%);
-  filter: blur(2px) grayscale(40%); */
-
 }
 
-.navbar-fixed-top {height: 40px;}
-.navbar-brand img {
-  height: 40px;
-  width: 40px;
+.navbar {
+  background-color: #2d3541;
+}
+
+.navbar-fixed-top {
+  height: 36px;
+}
+
+.navbar-brand {
+  font-size: 1.4em;
+}
+
+.navbar-brand img, .nav-link img  {
+  height: 32px;
+  width: 32px;
 }
 
 .app-title {
   font-size: 2.7rem;
   font-weight: 300;
   line-height: 1;
-}
-
-.display-3 {
-  font-weight: 200;
 }
 
 .img-container {
@@ -77,54 +82,42 @@ h4 {
   border-color: #4e558b;
 }
 
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.push {
+  height: 50px;
+}
+
+footer {
+  background-color: #2d3541;
+}
+
+.footer-secondary {
+  background: #dae6e9;
+}
+
 .row-tile-color {
   background-color: #aea6c753;
   border-radius: 15px;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #000000;
-  background-color: #00000088;
+.dropdown-menu, .dropdown-item {
+  background-color: #dedbe8;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+.dropdown-item, .dropdown-item:focus {
+  background-color: #dedbe8;
 }
 
-.close {
-  color: #aaa;
-  position: absolute;
-  right: 15px;
-  top: 2px;
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.dropdown-item:hover {
+  background-color: #837e94
 }
 
 @media (max-width: 996px) {
   h1 {
-    font-size: 4rem;
-  }
-  #main-logo {
-    width: 90%;
+    font-size: 16vw;
   }
   .img-fluid {
     width: 75%;
@@ -134,9 +127,5 @@ h4 {
   }
   .modal-content {
     width: 95%;
-  }
-  #last-name {
-    text-shadow: 1px 2px 5px #000000a0;
-    font-size: 4.5rem;
   }
 }
