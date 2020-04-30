@@ -32,9 +32,15 @@
 </head>
 <body>
   <div class="jumbotron jumbotron-fluid mb-0">
-      <div class="d-flex justify-content-center align-items-center" style="height: 80vh">
-        <h1 data-aos="fade-up" class="d-inline">Eric <span id="last-name">McDaniel</span></h1>
-    </div>
+      <div class="d-flex justify-content-center align-items-center" style="height: 60vh">
+        <h1 data-aos="fade-up" class="pt-5">Eric <span id="last-name">McDaniel</span></h1>
+      </div>
+      <br>
+      <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800" class="scroll">
+        <h3>Scroll Down</h3>
+        <i class="fas fa-chevron-circle-down arrow bounce scroll"></i>
+      </div>
+      
   </div>
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark mt-0">
     <div class="container">
@@ -66,16 +72,16 @@
             <a class="nav-link mr-1 disabled" href="#" tabindex="-1" aria-disabled="true">Résumé</a>
           </li>
         </ul>
-        <a class="nav-link d-inline mr-1 p-0" href="https://github.com/McDanielES/"><img src="imgs/network-icons/github.png" class="img-fluid"></a>
-        <a class="nav-link d-inline mr-1 p-0" href="https://www.linkedin.com/in/eric-mcdaniel-71a1a2153/"><img src="imgs/network-icons/linkedin.png" class="img-fluid"></a>
-        <a class="nav-link d-inline mr-1 p-0" href="https://twitter.com/devnullsrevenge"><img src="imgs/network-icons/twitter.png" class="img-fluid"></a>
-        <a class="nav-link d-inline mr-1 p-0" href="https://www.facebook.com/eric.s.mcdaniel/"><img src="imgs/network-icons/facebook.png" class="img-fluid"></a>
+        <a class="nav-link d-inline mr-1 p-0" href="https://github.com/McDanielES/"><img src="imgs/network-icons/github.png" class="img-fluid mt-4 mt-lg-0"></a>
+        <a class="nav-link d-inline mr-1 p-0" href="https://www.linkedin.com/in/eric-mcdaniel-71a1a2153/"><img src="imgs/network-icons/linkedin.png" class="img-fluid mt-4 mt-lg-0"></a>
+        <a class="nav-link d-inline mr-1 p-0" href="https://twitter.com/devnullsrevenge"><img src="imgs/network-icons/twitter.png" class="img-fluid mt-4 mt-lg-0"></a>
+        <a class="nav-link d-inline mr-1 p-0" href="https://www.facebook.com/eric.s.mcdaniel/"><img src="imgs/network-icons/facebook.png" class="img-fluid mt-4 mt-lg-0"></a>
       </div>
     </div>
   </nav>
   <div class="container wrapper mt-5">
-    <div data-aos="fade-left">
-      <div class="row" data-aos="fade-left">
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <div class="row">
         <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
           <p><span class="app-title">Math Decoder</span> is a Cryptography focused mathematics worksheet aimed at helping young children have fun while practicing mathematics. Parents are prompted to enter a secret message plus an optional additional message. Using the jQuery javascript library, this web application will transform this secret message string into a series of mathematical expressions that need to be solved. With each expression and accompanying letter corresponding to a blank solution provided below, it is up to the decoder to solve the expressions to decrypt the message. This web app was designed to be as printable as possible. Users can input any arbitrary sentence, and the program will do all the work generating the expressions. Simply send it to your printer and let your child decode the message.</p>
         </div>
@@ -90,8 +96,7 @@
       <div class="col-md-6 text-justify d-flex justify-content-center align-items-center my-3">
         <button id="myBtn" type="button" class="btn btn-secondary btn-lg">View Samples</a>
       </div>
-
-      <div id="myModal" class="modal">
+      <!-- <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <h4>What did the doctor say to the monkey's parents?</h4>
@@ -106,11 +111,11 @@
             </div>
           </div>
         </div>      
-      </div>
+      </div> -->
     </div>
   </div>
 
-  <div data-aos="fade-right">
+  <div data-aos="fade-up" data-aos-anchor-placement="top-center">
     <div class="row-tile-color px-3 my-4 py-3">
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
@@ -128,14 +133,14 @@
     </div>
   </div>
 
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <div class="row">
         <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
           <h3><span class="app-title">Other clicky stuffs</span></h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
+        <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
           <ul>
             <li><a href="thegreatguess">The Great Guess</a>, an RGB Color Guessing Game</li>
             <li><a href="todolist">Todo List</a>, a stupid simple todo list</li>
@@ -146,9 +151,12 @@
             </li>
             <li><a href="https://github.com/McDanielES/">Eric's GitHub</a>, where I open-source a lot of code</li>
             <ul>
-              <li>Another Note: Most code on this website current in development won't be available until I actually release the first beta version. Check back soon.</li>
+              <li>Another Note: Most code on this website currently is in development and won't be available until I actually release the first beta version. Check back soon.</li>
             </ul>
           </ul>  
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
+          <img class="img-fluid d-none d-md-block" src="imgs/logos/bashlogo.png" alt="Main Terminal Logo">
         </div>
       </div>
     </div>
