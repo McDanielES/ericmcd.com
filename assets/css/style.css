@@ -7,7 +7,6 @@ body {
 
 h1 {
   color: #fc766a;
-  /* font-size: 13.0rem; */
   font-size: 12vw;
   font-weight: 200;
   font-variant: small-caps;
@@ -20,9 +19,15 @@ h4 {
 
 #last-name {
   font-weight: 700;
-  color: #2c65a5;
+  color: #2c65a5df;
   letter-spacing: -0.4rem;
   text-shadow: 4px 5px 10px #000000cf;
+}
+
+.scroll {
+  text-align: center;
+  color: #ddddddaa;
+  font-size: 2rem;
 }
 
 .display-3 {
@@ -30,16 +35,39 @@ h4 {
 }
 
 .jumbotron {
-  background: #33333322;
   background: linear-gradient(rgba(0, 0, 0, 0.05),
                               rgba(0, 0, 0, 0.9)), 
-              url("../../header2.jpg") no-repeat center center fixed; 
+              url("../../imgs/header-lilly-compressed.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
 }
+
+/* Begin bouncing chevron animation */
+.arrow {
+  margin: 20px 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+/* End bouncing chevron animation */
 
 .navbar {
   background-color: #2d3541;
@@ -87,7 +115,7 @@ h4 {
   margin-bottom: -50px;
 }
 .push {
-  height: 50px;
+  height: 75px;
 }
 
 footer {
@@ -99,7 +127,7 @@ footer {
 }
 
 .row-tile-color {
-  background-color: #aea6c753;
+  background-color: #dedbe8;
   border-radius: 15px;
 }
 
@@ -112,20 +140,27 @@ footer {
 }
 
 .dropdown-item:hover {
-  background-color: #837e94
+  background-color: #837e94;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #7b7785;
 }
 
 @media (max-width: 996px) {
+  body {
+    overflow-x: hidden;
+  }
   h1 {
     font-size: 16vw;
   }
+  .scroll {
+    font-size: 1.2rem;
+  }
+  .arrow {
+    font-size: 1.9rem;
+  }
   .img-fluid {
     width: 75%;
-  }
-  .close {
-    font-size: 2.5rem;
-  }
-  .modal-content {
-    width: 95%;
   }
 }
