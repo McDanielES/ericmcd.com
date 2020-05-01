@@ -4,5 +4,7 @@
 !imgs/**
 !assets
 !assets/**
+!portfolio
+!portfolio/**
 !index.html
 !.htaccess
