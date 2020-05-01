@@ -5,7 +5,7 @@ body {
   background: #f4f4f7;
 }
 
-h1 {
+h1#first-name {
   color: #fc766a;
   font-size: 12vw;
   font-weight: 200;
@@ -17,11 +17,17 @@ h4 {
   font-size: 2rem;
 }
 
+
 #last-name {
   font-weight: 700;
   color: #2c65a5df;
   letter-spacing: -0.4rem;
   text-shadow: 4px 5px 10px #000000cf;
+}
+
+#squeeze-buttons {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .scroll {
@@ -96,8 +102,13 @@ h4 {
   width: 100%;
 }
 
+.large {
+  font-size: 125%;
+}
+
 .btn-secondary {
   background-color: #6c759d;
+  border-color: #6c759d;
 }
 
 .btn-secondary:hover {
@@ -147,11 +158,26 @@ footer {
   border-top: 1px solid #7b7785;
 }
 
-@media (max-width: 996px) {
+.list-group .active, .list-group .active:hover {
+  background-color: #8080a0;
+  border-color: #8080a0;
+  color: #fff
+}
+
+.list-group-item-action:hover {
+  background-color: #c6c6d6;
+}
+
+.close {
+  font-size: 130%;
+
+}
+
+@media (max-width: 992px) {
   body {
     overflow-x: hidden;
   }
-  h1 {
+  h1#first-name {
     font-size: 16vw;
   }
   .scroll {
@@ -160,7 +186,11 @@ footer {
   .arrow {
     font-size: 1.9rem;
   }
-  .img-fluid {
-    width: 75%;
+}
+
+/* Increase default bootstrap modal width */
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 65%;
   }
 }

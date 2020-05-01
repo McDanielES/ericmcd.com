@@ -33,7 +33,7 @@
 <body>
   <div class="jumbotron jumbotron-fluid mb-0">
       <div class="d-flex justify-content-center align-items-center" style="height: 60vh">
-        <h1 data-aos="fade-up" class="pt-5">Eric <span id="last-name">McDaniel</span></h1>
+        <h1 id="first-name" data-aos="fade-up" class="pt-5">Eric <span id="last-name">McDaniel</span></h1>
       </div>
       <br>
       <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800" class="scroll">
@@ -44,7 +44,7 @@
   </div>
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark mt-0">
     <div class="container">
-      <a class="navbar-brand mr-4" href="#"><img src="imgs/logos/bashlogo-mini.png" class="img-fluid mr-1"> <span class="text-white-50">/home/</span>ericmcd.com</a>
+      <a class="navbar-brand mr-4"><img src="imgs/logos/bashlogo-mini.png" class="img-fluid mr-1"> <span class="text-white-50">/home/</span>ericmcd.com</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,10 +52,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link mr-1" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link mr-1">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mr-1" href="#">Portfolio</a>
+            <a class="nav-link mr-1" href="portfolio">Portfolio</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link mr-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -80,7 +80,7 @@
     </div>
   </nav>
   <div class="container wrapper mt-5">
-    <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="mb-5">
       <div class="row">
         <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
           <p><span class="app-title">Math Decoder</span> is a Cryptography focused mathematics worksheet aimed at helping young children have fun while practicing mathematics. Parents are prompted to enter a secret message plus an optional additional message. Using the jQuery javascript library, this web application will transform this secret message string into a series of mathematical expressions that need to be solved. With each expression and accompanying letter corresponding to a blank solution provided below, it is up to the decoder to solve the expressions to decrypt the message. This web app was designed to be as printable as possible. Users can input any arbitrary sentence, and the program will do all the work generating the expressions. Simply send it to your printer and let your child decode the message.</p>
@@ -89,17 +89,71 @@
           <img class="img-fluid d-none d-md-block" src="mathdecoder/imgs/calculator.png" alt="Math Decoder logo">
         </div>
       </div>      
-    <div class="row">
-      <div class="col-md-6 text-justify d-flex justify-content-center align-items-center my-3">
-        <a href="mathdecoder" type="button" class="btn btn-secondary btn-lg">Take me to Math Decoder</a>
+      <div class="row mt-4" id="squeeze-buttons">
+        <div class="col-lg-4 offset-lg-1 col-md-5 offset-md-1 offset-1 col-10 mt-3 mt-lg-0">
+          <a href="mathdecoder" type="button" class="btn btn-secondary btn-lg btn-block">Visit Math Decoder</a>
+        </div>
+        <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 offset-1 col-10 mt-3 mt-lg-0">
+          <button id="myBtn" type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#math-decoder-modal-centered">View Samples</a>
+        </div>
       </div>
-      <div class="col-md-6 text-justify d-flex justify-content-center align-items-center my-3">
-        <button id="myBtn" type="button" class="btn btn-secondary btn-lg">View Samples</a>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <div class="row-tile-color px-3 my-4 py-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
+            <img class="img-fluid d-none d-md-block" src="https://chore.ericmcd.com/choreimgs/favicon.png" alt="Chore Chart logo">
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center px-4 pt-4">
+            <p><span class="app-title">Chore Chart</span> is a proof of concept web application that is currently <strong>non-functional</strong> and currently in development. This is a chore tracking solution for parents and an interactive method for children to find new ways to enjoy working on their often boring chores. Similar to Math Decoder, it was based on <a href="../chore.ericmcd.com/choreimgs/chorechartconcept.jpg">this concept we previously made on Microsoft Word</a> for Lillian. We laminated a chore chart and she marked off her tasks. My goal was to make it more interactive, fun, and engaging for her. I wanted a measurable solution for parents to track the progress and keep records of her actions, and thus Chore Chart was born. <strong>Please understand:</strong> The website is front-end only and is strictly eye-candy. No actual logging is taking place and no back-end technology has been implement. That will come in due time. This is just a proof of concept.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
+            <a href="../chore.ericmcd.com/" type="button" class="btn btn-secondary btn-lg">Visit Chore Chart (Beta)</a>
+          </div>
+        </div>
       </div>
-      <!-- <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h4>What did the doctor say to the monkey's parents?</h4>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <div class="row">
+        <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
+          <h3><span class="app-title">Other clicky stuffs</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
+          <div class="list-group">
+            <span class="list-group-item list-group-item-action active large text-center">Projects and Resources</span>
+            <a href="thegreatguess" class="list-group-item list-group-item-action"><span class="large">The Great Guess</span>, an RGB Color Guessing Game</a>
+            <a href="todolist" class="list-group-item list-group-item-action"><span class="large">Todo List</span>, a stupid simple todo list</a>
+            <a href="patatapper" class="list-group-item list-group-item-action"><span class="large">Patatapper Clone</span>, just like Patatap, but more primitive
+            <br><small><strong>Note: desktop only!</strong> The keypress events cannot be registered from a mobile device.</small></a>
+            <a href="https://github.com/McDanielES/" class="list-group-item list-group-item-action">Eric's GitHub, where I open-source the code to my projects
+            <br><small><strong>Another note:</strong> Most code on this website currently is in development and won't be available until I actually release the first beta version. Check back soon.</small></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block p-3">
+          <img class="img-fluid d-none d-md-block" src="imgs/logos/bashlogo.png" alt="Main Terminal Logo">
+        </div>
+      </div>
+    </div>
+      <div class="push"></div>
+  </div>
+
+  <!-- Math Decoder Modal -->
+  <div class="modal fade" id="math-decoder-modal-centered" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalCenterTitle">What did the doctor say to the monkey's parents?</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="large">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
           <div class="row">
             <div class="col-lg-6 col-sm-12 mt-2">
               <a href="mathdecoder/imgs/LillyDemo.jpg"><img class="img-container" src="mathdecoder/imgs/LillyDemo.jpg" alt="Lilly with completed worksheet"></a>
@@ -110,59 +164,13 @@
               <p class="mt-2 text-center">Another sample worksheet set to Level 3</p>
             </div>
           </div>
-        </div>      
-      </div> -->
-    </div>
-  </div>
-
-  <div data-aos="fade-up" data-aos-anchor-placement="top-center">
-    <div class="row-tile-color px-3 my-4 py-3">
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
-          <img class="img-fluid d-none d-md-block" src="https://chore.ericmcd.com/choreimgs/favicon.png" alt="Chore Chart logo">
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center px-4 pt-4">
-          <p><span class="app-title">Chore Chart</span> is a proof of concept web application that is currently <strong>non-functional</strong> and currently in development. This is a chore tracking solution for parents and an interactive method for children to find new ways to enjoy working on their often boring chores. Similar to Math Decoder, it was based on <a href="../chore.ericmcd.com/choreimgs/conceptchorechart.jpg">this concept we previously made on Microsoft Word</a> for Lillian. We laminated a chore chart and she marked off her tasks. My goal was to make it more interactive, fun, and engaging for her. I wanted a measurable solution for parents to track the progress and keep records of her actions, and thus Chore Chart was born. <strong>Please understand:</strong> The website is front-end only and is strictly eye-candy. No actual logging is taking place and no back-end technology has been implement. That will come in due time. This is just a proof of concept.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
-          <a href="../chore.ericmcd.com/" type="button" class="btn btn-secondary btn-lg">Take me to Chore Chart (Beta)</a>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-
-    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-      <div class="row">
-        <div class="col-sm-12 text-justify d-flex justify-content-center align-items-center my-3">
-          <h3><span class="app-title">Other clicky stuffs</span></h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-9 col-md-8 col-sm-12 text-justify d-flex justify-content-center align-items-center mt-3 px-4">
-          <ul>
-            <li><a href="thegreatguess">The Great Guess</a>, an RGB Color Guessing Game</li>
-            <li><a href="todolist">Todo List</a>, a stupid simple todo list</li>
-            <li><a href="patatapper">Patatapper Clone</a>, just like <a href="https://patatap.com/">Patatap</a> but more primitive.
-              <ul>
-                <li><strong>Desktop only!</strong> The keypress events cannot be registered from a mobile device.</li>
-              </ul>
-            </li>
-            <li><a href="https://github.com/McDanielES/">Eric's GitHub</a>, where I open-source a lot of code</li>
-            <ul>
-              <li>Another Note: Most code on this website currently is in development and won't be available until I actually release the first beta version. Check back soon.</li>
-            </ul>
-          </ul>  
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12 text-justify d-flex justify-content-center align-items-center d-none d-md-block">
-          <img class="img-fluid d-none d-md-block" src="imgs/logos/bashlogo.png" alt="Main Terminal Logo">
-        </div>
-      </div>
-    </div>
-    <div class="push"></div>
-  </div>
-  
 
   <footer class="py-4 text-white-50">
     <div class="container text-center">
