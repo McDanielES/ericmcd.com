@@ -186,6 +186,9 @@ footer {
   .arrow {
     font-size: 1.9rem;
   }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
 }
 
 /* Increase default bootstrap modal width */
