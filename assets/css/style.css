@@ -43,7 +43,7 @@ h4 {
 .jumbotron {
   background: linear-gradient(rgba(0, 0, 0, 0.05),
                               rgba(0, 0, 0, 0.9)), 
-              url("../../imgs/header-lilly-compressed.jpg") no-repeat center center fixed; 
+              url("../../imgs/headers/header-lilly-compressed.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -168,9 +168,8 @@ footer {
   background-color: #c6c6d6;
 }
 
-.close {
-  font-size: 130%;
-
+.modal-header, .modal-footer {
+  background-color: #939bbe;
 }
 
 @media (max-width: 992px) {
